@@ -1,0 +1,224 @@
+:root{
+    --white: whitesmoke;
+    --dark: #333;
+    --green: #317b22;
+    --red: #b80c09;
+    --blue: #05668d;
+    --shadow: 0 5px 10px rgba(124, 124, 124, 0.8);
+    --border: 5px;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}body{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+
+}
+.main-container{
+    width: 85%;
+    margin: auto;
+    background: var(--white);
+    color: var(--dark);
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+.masage{
+    font-size: 20px;
+    font-weight: 700;
+    background: var(--red);
+    border: 2px solid var(--red);
+    opacity: 0.3;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    display: none;
+
+}
+.masage2{
+    font-size: 20px;
+    font-weight: 700;
+    background: var(--red);
+    border: 2px solid var(--red);
+    opacity: 0.3;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    display: none;
+
+}
+.head{
+    font-size: 35px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px dotted var(--blue);
+}
+.first-wrapper{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 30px;
+}
+.wrap-con{
+   border: 1px solid var(--green);
+    padding: 1rem 1rem;
+    border-radius: var(--border);
+}
+.con-text{
+    font-size: 25px;
+    font-weight: 300;
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+#budget{
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: var(--border);
+    outline: none;
+}
+.btn{
+    font-size: 20px;
+    text-transform: capitalize;
+    border: 2px solid black;
+    width: 120px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: var(--border);
+    border-color: var(--green);
+    color: var(--green)
+
+}
+.btn:hover{
+    background: var(--green);
+    color: var(--white);
+}
+/* inline items in first section */
+.wrap-two{
+    display: flex;
+    justify-content: space-evenly;
+}
+.wrap-head{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.icon{
+    color: var(--green);
+}
+.h2-num{
+    font-size: 35px;
+    text-transform: center;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+/* second item in the list */
+.second-main-wrap{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 30px;
+}
+.second-con{
+    
+    
+}
+.expenses-value{
+    text-transform: capitalize;
+    font-size: 20px;
+    float: right;
+    font-weight: normal;
+    margin-right: 150px;
+   
+}
+.expenses-title{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: normal;
+   
+}
+.other-second{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.change{
+    border: 1px solid var(--red);
+    padding: 1rem 1rem;
+    border-radius: var(--border);
+}
+.change-btn{
+    border: 1px solid var(--red);
+    color:var(--red);
+}
+
+
+.ex-tit{
+    text-transform: capitalize;
+}
+/* javascript classes */
+.show-msg{
+    display: block;
+}
+.show-msg2{
+    display: block;
+}
+.green{
+    color: var(--green);
+}
+
+.red{
+   color: var(--red);
+}
+
+.black{
+    color: var(--dark);
+}
+.delete-icon{
+    cursor: pointer;
+}
+.edit-icon{
+    cursor: pointer;
+}
+@media(max-width: 750px){
+    .first-wrapper{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .second-main-wrap{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrap-two{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .wrap-head{
+        font-size: 20px;
+    }
+    .icon{
+        font-size: 30px;
+        align-items: center;
+    }
+    .expenses-title{
+       margin-right: 100px;   
+    }
+}

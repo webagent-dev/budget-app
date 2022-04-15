@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.js" integrity="sha512-14GPUgKFTeCsgj5WWZpTNQ525GYlOK3DMTqrjsly3TDIDnOUbZ5sWyfI6HqsWUmMmaCoa6q7FHrbq9xdqNhmYg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="main-container">
+        <h1 class="head">budget app</h1>
+        <div class="masage"></div>
+        <div class="first-wrapper">
+            <form class="form wrap-con" >
+
+                <h2 class="con-text">please enter your budget</h2>
+                <input type="text" class="budget" id="budget">
+                <button type="submit" class="btn">calculate</button>
+
+            </form>
+            <!-- in first wrap -->
+            <div class="wrap-two">
+                <div class="main-two-wrap">
+                    <h1 class="wrap-head budback">budget</h1>
+                    <i class="fas fa-money-bill-alt fa-4x icon"></i>
+                    
+                    <div class="h2-num budget-amount">0</div>
+                </div>
+
+                <div class="main-two-wrap">
+                    <h1 class="wrap-head expenback">expence</h1>
+                    <i class="far fa-credit-card fa-4x icon"></i>
+        
+                  <div class="h2-num expence-amount">0</div>
+                </div>
+
+                <div class="main-two-wrap">
+                    <h1 class="wrap-head balanback">balance</h1>
+                    <i class="fas fa-dollar-sign fa-4x icon"></i>
+                    <div class="h2-num balance-amount">0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- second child -->
+        <div class="masage2"></div>
+
+        <div class="second-main-wrap">
+            <form class="change" id="realTow">
+
+                <h3 class="con-text">please enter your expenses</h3>
+
+                 <input type="text" class="expen-input change" id="budget">
+
+                 <h3 class="con-text">please enter your expenses amount</h3>
+
+                 <input type="text" class="amount-input change" id="budget">
+                <input type="submit" class="btn change-btn">
+
+            </form>
+            <!-- second container -->
+            <div class="second-con"> 
+                
+                <h2 class="expenses-value">expenses value</h2>
+                <h2 class="expenses-title">expenses title</h2>
+
+                  <!-- other second container -->
+           
+             </div>
+
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
